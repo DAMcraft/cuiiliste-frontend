@@ -17,8 +17,11 @@ watch(() => route.path, (newVal) => {
 		<SidebarItem link="/" :active="currentPage === '/'">
 			Home
 		</SidebarItem>
-		<SidebarItem link="/about" :active="currentPage === '/about'">
-			About
+		<SidebarItem link="/resolvers" :active="currentPage === '/resolvers'">
+			DNS Resolver status
+		</SidebarItem>
+		<SidebarItem link="/test" :active="currentPage === '/test'">
+			Domain testen
 		</SidebarItem>
 	</div>
 </template>

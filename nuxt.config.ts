@@ -9,4 +9,9 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
+    runtimeConfig: {
+        public: {
+            api_root: 'https://api.cuiiliste.de'
+        }
+    }
 })
