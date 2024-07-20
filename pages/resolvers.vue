@@ -11,13 +11,19 @@ let nonBlockingResolvers = resolvers.filter((resolver: any) => !resolver.is_bloc
 </script>
 
 <template>
-	<h1>DNS Resolvers</h1>
-	<h2>Blocking</h2>
-	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+	<h1 class="text-3xl font-bold pb-2">DNS Resolver</h1>
+	<h2 class="text-xl font-bold pb-1">Blocking</h2>
+	<p>
+		Diese DNS-Resolver gehören zu Internetanbietern, die CUII-Mitglieder sind. Sie blockieren Zugriffe auf Webseiten, die in der CUII-Blacklist stehen.
+	</p>
+	<div class="grid sm:grid-cols-2 grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 p-4">
 		<Resolver v-for="resolver in blockingResolvers" :name="resolver.resolver" :health="resolver.health" :ping="resolver.ping" :key="resolver.resolver" />
 	</div>
-	<h2>Non-Blocking</h2>
-	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+	<h2 class="text-xl font-bold pb-1">Non-Blocking</h2>
+	<p>
+		Diese DNS-Resolver sind unabhängig von Internetanbietern und blockieren keine Webseiten auf Sperrempfehlungen der CUII.
+	</p>
+	<div class="grid sm:grid-cols-2 grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 p-4">
 		<Resolver v-for="resolver in nonBlockingResolvers" :name="resolver.resolver" :health="resolver.health" :ping="resolver.ping" :key="resolver.resolver" />
 	</div>
 </template>

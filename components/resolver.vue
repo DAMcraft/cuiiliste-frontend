@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps({
-    name: {
+	name: {
 		type: String,
 		required: true
 	},
@@ -14,25 +14,27 @@ const props = defineProps({
 	},
 })
 
-let color = 'bg-green-500'  // REACHABLE
+let color = 'success'
+let tooltip = 'Ping: ' + props.ping + 'ms'
 if (props.health === 'UNREACHABLE') {
-	color = 'bg-gray-500'
+	color = 'warning'
+	tooltip = 'Unreachable'
 } else if (props.health === 'ERROR') {
-	color = 'bg-red-500'
+	color = 'error'
+	tooltip = 'Error'
 }
 </script>
 
 <template>
-	<div class="bg-bg-secondary text-center overflow-auto z-10 border-slate-500">
-		<span class="text-white font-bold float-left mt-1 mb-1 ml-3 p-2">
-	        {{ props.name }}
+	<div class="text-center items-center flex gap-2">
+		<Icon name="uil:check" class="text-success" v-if="props.health === 'REACHABLE'"></Icon>
+		<Icon name="uil:ban" class="text-warning" v-else-if="props.health === 'UNREACHABLE'"></Icon>
+		<Icon name="uil:times" class="text-error" v-else></Icon>
+		<span :class="`text-${color}`">
+			{{ props.name }}
 		</span>
-		<div class="float-right mr-3 mt-3">
-			<div class="flex">
-				<div :class="color" class="rounded-full p-1 ml-1">
-					{{ props.health }} <span v-if="props.health === 'REACHABLE'">({{ props.ping }}ms)</span>
-				</div>
-			</div>
+		<div class="tooltip mt-1.5" :data-tip="tooltip">
+			<Icon name="uil:info-circle"></Icon>
 		</div>
 	</div>
 </template>

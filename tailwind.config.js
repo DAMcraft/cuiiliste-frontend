@@ -1,15 +1,29 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
-  theme: {
-    extend: {
-      colors: {
-        "bg-primary": "#1B1B1B",
-        "bg-primary-hover": "#212121",
-        "bg-secondary": "#303030"
-      },
+    content: [],
+    theme: {
+        extend: {
+            colors: {
+                accent: "#f26e24",
+            },
+        },
     },
-  },
-  plugins: [],
+    plugins: [
+        require("daisyui"),
+    ],
+    daisyui: {
+        themes: [
+            {
+                "light": {
+                    ...require("daisyui/src/theming/themes")["light"],
+                    "accent": "#f26e24",
+                },
+                "dark": {
+                    ...require("daisyui/src/theming/themes")["dark"],
+                    "accent": "#f26e24",
+                },
+            },
+        ]
+    },
 }
 
