@@ -17,10 +17,12 @@ export default {
                 "light": {
                     ...require("daisyui/src/theming/themes")["light"],
                     "accent": "#f26e24",
+                    "--lessimportant": "#a6a6a6",
                 },
                 "dark": {
                     ...require("daisyui/src/theming/themes")["dark"],
                     "accent": "#f26e24",
+                    "--lessimportant": "#737373",
                 },
             },
         ]

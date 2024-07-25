@@ -48,10 +48,11 @@
 </template>
 
 <script setup>
+
 let pages = [
-	{ name: 'Home', link: '/' },
-	{ name: 'DNS Resolver status', link: '/resolvers' },
-	{ name: 'Domain testen', link: '/test' }
+	{name: 'Home', link: '/'},
+	{name: 'DNS Resolver status', link: '/resolvers'},
+	{name: 'Domain hinzufügen', link: '/probe'}
 ]
 
 const route = useRoute()
@@ -61,6 +62,6 @@ currentPage.value = route.path
 
 // on route change, update currentPage
 watch(() => route.path, (newVal) => {
-    currentPage.value = newVal
+	currentPage.value = newVal
 })
 </script>
