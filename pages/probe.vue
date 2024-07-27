@@ -9,11 +9,17 @@ let finalResultText = ref('')
 let domainToCheck = ''
 let blockingResolvers: any[] = []
 let nonBlockingResolvers: any[] = []
+let hasInput = ref(true)
 
 const testDomain = async () => {
-	isSearching.value = true
+	hasInput.value = true
 	hasResult.value = false
-	domainToCheck = (document.getElementById('testDomainInput') as HTMLInputElement).value
+	domainToCheck = (document.getElementById('testDomainInput') as HTMLInputElement).value.trim()
+	if (domainToCheck === '') {
+		hasInput.value = false
+		return
+	}
+	isSearching.value = true
 	const res = await fetch(useRuntimeConfig().public.api_root + '/test_domain?domain=' + domainToCheck)
 	const data = await res.json()
 	// this will look something like this:
@@ -37,6 +43,7 @@ const testDomain = async () => {
 			<input type="text" placeholder="kinox.to" class="input input-bordered w-full max-w-xs m-5 placeholder-[--lessimportant]" id="testDomainInput" @keyup.enter="testDomain" :disabled="isSearching">
 			<button class="btn btn-accent" id="testDomainButton" @click="testDomain" :disabled="isSearching">Testen</button>
 		</div>
+		<div v-if="!hasInput" class="text-error">Bitte gib eine Domain ein.</div>
 		<span class="loading loading-spinner loading-lg text-accent" id="loadingSpinner" :class="isSearching ? '' : 'hidden'"></span>
 		<div id="resultDiv" :class="hasResult ? '' : 'hidden'">
 			<div class="text-2xl font-bold">
