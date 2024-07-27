@@ -23,7 +23,7 @@
 				<div class="hidden flex-none lg:block">
 					<ul class="menu menu-horizontal">
 						<li v-for="page in pages" :key="page.name">
-							<MenuItem :to="page.link" :active="currentPage === page.link">
+							<MenuItem :link="page.link" :active="currentPage === page.link">
 								{{ page.name }}
 							</MenuItem>
 						</li>
@@ -38,7 +38,7 @@
 			<label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
 			<ul class="menu bg-base-200 min-h-full w-80 p-4">
 				<li v-for="page in pages" :key="page.name">
-					<MenuItem :to="page.link" :active="currentPage === page.link">
+					<MenuItem :link="page.link" :active="currentPage === page.link">
 						{{ page.name }}
 					</MenuItem>
 				</li>
@@ -52,7 +52,8 @@
 let pages = [
 	{name: 'Home', link: '/'},
 	{name: 'DNS Resolver status', link: '/resolvers'},
-	{name: 'Domain hinzufügen', link: '/probe'}
+	{name: 'Domain hinzufügen', link: '/probe'},
+	{name: 'Bin ich betroffen?', link: '/isp'},
 ]
 
 const route = useRoute()
