@@ -69,4 +69,9 @@ currentPage.value = route.path
 watch(() => route.path, (newVal) => {
 	currentPage.value = newVal
 })
+
+
+definePageMeta({
+	middleware: ['old-cuiiliste-redirects'],
+})
 </script>
