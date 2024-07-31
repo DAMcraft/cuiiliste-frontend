@@ -13,7 +13,7 @@ const props = defineProps({
 		<input type="checkbox" class="peer" />
 		<div class="collapse-title text-xl font-medium">Fritzbox <span v-if="isRecommended" class="text-accent">(Gilt für alle im Netzwerk)</span></div>
 		<div class="collapse-content md:ml-4">
-			<p><count>1.</count> Öffne <a href="http://fritz.box" target="_blank" class="text-accent">http://fritz.box</a></p>
+			<p><count>1.</count> Öffne <a href="http://192.168.178.1" target="_blank" class="text-accent">http://fritz.box</a></p>
 			<p><count>2.</count> Melde dich an</p>
 			<NuxtImg src="/img/bypass/fritzbox1.png" alt="Fritzbox Anmeldung" width="600" />
 			<p><count>3.</count> Gehe auf "Internet" und dann auf "Zugangsdaten"</p>
