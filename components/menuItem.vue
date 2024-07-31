@@ -1,15 +1,23 @@
 <template>
     <NuxtLink class="p-1 ml-2 mr-2" :to="link">
-        <div class="p-2 w-full text-center">
+        <div class="p-2 text-center">
             <div class="font-bold text-accent" :class="active ? '' : 'invisible h-0'">
-                <slot></slot>
+                <span class="flex items-center">
+                    <Icon :name="icon" class="mr-1" />
+                    <slot></slot>
+                </span>
             </div>
             <div class="text-base-content" v-if="!active">
-				<slot></slot>
+                <span class="flex items-center">
+                    <Icon :name="icon" class="mr-1" />
+                    <slot></slot>
+                </span>
             </div>
         </div>
     </NuxtLink>
 </template>
+
+
 
 <script setup>
 
@@ -22,6 +30,10 @@ const props = defineProps({
         type: Boolean,
         default: false
     },
+	icon: {
+		type: String,
+		default: ''
+	}
 })
 
 </script>

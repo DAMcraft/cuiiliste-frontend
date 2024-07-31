@@ -3,7 +3,7 @@
 		<input id="my-drawer" type="checkbox" class="drawer-toggle"/>
 		<div class="drawer-content flex flex-col">
 			<!-- Navbar -->
-			<div class="navbar bg-base-300 w-full">
+			<div class="navbar bg-base-300 w-full z-50 sticky top-0">
 				<div class="flex-none lg:hidden">
 					<label for="my-drawer" aria-label="open sidebar" class="btn btn-square btn-ghost">
 						<svg
@@ -23,7 +23,7 @@
 				<div class="hidden flex-none lg:block">
 					<ul class="menu menu-horizontal">
 						<li v-for="page in pages" :key="page.name">
-							<MenuItem :link="page.link" :active="currentPage === page.link">
+							<MenuItem :link="page.link" :active="currentPage === page.link" :icon="page.icon">
 								{{ page.name }}
 							</MenuItem>
 						</li>
@@ -39,6 +39,7 @@
 			<ul class="menu bg-base-200 min-h-full w-80 p-4">
 				<li v-for="page in pages" :key="page.name">
 					<MenuItem :link="page.link" :active="currentPage === page.link">
+						<Icon :name="page.icon" class="mr-2" :class="{ 'text-accent': currentPage === page.link }" />
 						{{ page.name }}
 					</MenuItem>
 				</li>
@@ -50,10 +51,13 @@
 <script setup>
 
 let pages = [
-	{name: 'Home', link: '/'},
-	{name: 'DNS Resolver status', link: '/resolvers'},
-	{name: 'Domain hinzufügen', link: '/probe'},
-	{name: 'Bin ich betroffen?', link: '/isp'},
+	{name: 'Home', link: '/', icon: 'iconamoon:home-fill'},
+	{name: 'Gesperrte Domains', link: '/domains', icon: 'iconamoon:search'},
+	{name: 'Domain hinzufügen', link: '/probe', icon: 'tabler:plus'},
+	{name: 'Bin ich betroffen?', link: '/isp', icon: 'pepicons-pop:question'},
+	{name: 'Zensur umgehen', link: '/umgehen', icon: 'mdi:shield-check'},
+	{name: 'DNS Resolver status', link: '/resolvers', icon: 'pajamas:status-health'},
+	{name: 'Über uns', link: '/about', icon: 'mdi:information-outline'},
 ]
 
 const route = useRoute()

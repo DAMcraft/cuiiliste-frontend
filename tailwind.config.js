@@ -6,6 +6,9 @@ export default {
             colors: {
                 accent: "#f26e24",
             },
+            backgroundImage: {
+                "cuii-banner-background": "url('/img/cuii_bg.webp')",
+            }
         },
     },
     plugins: [
