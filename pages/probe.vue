@@ -1,4 +1,9 @@
 <script setup lang="ts">
+useSeoMeta({
+	title: 'CUII Liste - Domain hinzufügen',
+	ogTitle: 'CuiiListe.de - Domain hinzufügen'
+})
+
 definePageMeta({
 	layout: 'default'
 })

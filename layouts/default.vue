@@ -74,4 +74,32 @@ watch(() => route.path, (newVal) => {
 definePageMeta({
 	middleware: ['old-cuiiliste-redirects'],
 })
+
+useSeoMeta({
+	title: 'CUII Liste',
+	ogTitle: 'CuiiListe.de',
+	description: 'Die CUII Liste zeigt dir, welche Domains von der CUII gesperrt sind und wie du die Zensur umgehen kannst.',
+	ogDescription: 'Die CUII Liste zeigt dir, welche Domains von der CUII gesperrt sind und wie du die Zensur umgehen kannst.',
+	ogImage: '/img/nocuii.png',
+	ogUrl: 'https://cuiiliste.de',
+	twitterTitle: 'CuiiListe.de',
+	twitterImage: '/img/nocuii.png',
+	twitterCard: 'summary',
+	twitterDescription: 'Die CUII Liste zeigt dir, welche Domains von der CUII gesperrt sind und wie du die Zensur umgehen kannst.',
+	themeColor: '#f26e24'
+})
+useHead({
+	htmlAttrs: {
+        lang: 'de'
+    },
+	link: [
+		{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+	]
+})
 </script>
+
+<style>
+.link {
+  @apply underline text-primary cursor-pointer;
+}
+</style>

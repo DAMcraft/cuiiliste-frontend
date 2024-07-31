@@ -2,13 +2,7 @@
 export default defineNuxtConfig({
     compatibilityDate: '2024-04-03',
     devtools: {enabled: true},
-    modules: [
-        '@nuxtjs/tailwindcss',
-        '@vueuse/nuxt',
-        "@nuxt/icon",
-        "@nuxt/image",
-        '@nuxtjs/device'
-    ],
+    modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', "@nuxt/icon", "@nuxt/image", '@nuxtjs/device', '@nuxtjs/sitemap', '@nuxtjs/robots'],
     postcss: {
         plugins: {
             tailwindcss: {},
@@ -35,5 +29,16 @@ export default defineNuxtConfig({
         '/cuii/kontakt': {redirect: '/about'},
         '/cuii/domain-add': {redirect: '/probe'},
         '/cuii/news-rund-um-die-welt': {redirect: '/news'},
+    },
+    site: {
+        url: 'https://cuiiliste.de',
+        name: 'CuiiListe.de',
+    },
+    robots: {
+        rules: {
+            UserAgent: '*',
+            Allow: '/',
+            Sitemap: 'https://cuiiliste.de/sitemap.xml'
+        }
     }
 })

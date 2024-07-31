@@ -8,6 +8,11 @@ async function getBlockedDomains() {
 getBlockedDomains().then((res) => {
 	domains.value = res
 })
+
+useSeoMeta({
+	title: 'CUII Liste - Gesperrte Domains',
+	ogTitle: 'CuiiListe.de - Gesperrte Domains'
+})
 </script>
 
 <template>

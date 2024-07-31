@@ -1,4 +1,9 @@
 <script setup lang="ts">
+useSeoMeta({
+	title: 'CUII Liste - Bin ich betroffen?',
+	ogTitle: 'CuiiListe.de - Bin ich betroffen?',
+})
+
 const affectedASNs = [
 	8881,  // 1&1 Versatel
 	6805,  // Telefonica
@@ -46,7 +51,7 @@ amIAffected().then((res) => {
 				class="text-error">betroffen</span>!</span>
 			<div class="mt-5 text-lg">
 				Keine Sorge, die zu Umgehen ist ganz einfach.
-				<NuxtLink href="/umgehen" class="text-primary">Hier</NuxtLink>
+				<NuxtLink href="/umgehen" class="link">Hier</NuxtLink>
 				findest du eine Anleitung.
 			</div>
 		</div>

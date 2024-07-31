@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import {NuxtImg} from "#components";
+useSeoMeta({
+	title: 'CUII Liste - Sperre einfach umgehen',
+	ogTitle: 'CuiiListe.de - Sperre einfach umgehen'
+})
 
 let recommendedConfigs = ref<string[]>([])
 

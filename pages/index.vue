@@ -57,7 +57,7 @@ onMounted(() => {
 				<NuxtImg src="/img/nicht_genannt.webp" class="w-full"/>
 				<p class="text-[--lessimportant] italic">
 					Zitat aus Anlage 1 §4 Abs. 4 lit. des
-					<a class="text-primary" href="https://cuii.info/fileadmin/files/CUII_Verhaltenskodex_23.pdf"
+					<a class="link" href="https://cuii.info/fileadmin/files/CUII_Verhaltenskodex_23.pdf"
 					   target="_blank">CUII-Verhaltenskodex</a>
 					<br class="hidden sm:block"/>
 					SUW = Strukturell urheberrechtsverletzende Webseite
@@ -66,15 +66,22 @@ onMounted(() => {
 		</div>
 		<div class="bg-base-300 shadow-lg p-4 flex flex-col">
 			<h2 class="text-2xl font-bold">
-				Unser Ziel
+				Unsere Ziele
 			</h2>
-			<p>
-				Wir wollen die Sperrpraxis der CUII <b>transparent machen</b> und die Meinungsfreiheit im Internet
-				schützen.
-				Wir sind für eine Welt, in der das Internet frei und offen ist - und <b>nicht von privaten
-				Organisationen
-				zensiert</b> wird.
-			</p>
+			<ul class="list-disc ml-6 mt-2">
+				<li>
+					<b>Transparenz:</b> Wir wollen die Sperrpraxis der CUII transparent machen.
+				</li>
+				<li>
+					<b>Meinungsfreiheit:</b> Wir wollen die Meinungsfreiheit im Internet schützen.
+				</li>
+				<li>
+					<b>Freies Internet:</b> Wir sind für eine Welt, in der das Internet frei und offen ist.
+				</li>
+				<li>
+					<b>Keine Zensur:</b> Wir sind gegen Zensur durch private Organisationen.
+				</li>
+			</ul>
 		</div>
 		<div class="flex flex-col justify-between">
 			<NuxtLink class="bg-primary shadow-lg p-4 flex hover:bg-primary-hover mb-2 hover:shadow-xl" to="/umgehen">
@@ -156,7 +163,8 @@ onMounted(() => {
 						Monero
 					</div>
 					<NuxtLink class="bg-base-100 p-2 rounded-lg flex items-center gap-2 hover:bg-base-200 hover:cursor-pointer"
-					   :to="useRuntimeConfig().public.paypal_donate_url">
+					   :to="useRuntimeConfig().public.paypal_donate_url"
+					   target="_blank" rel="noopener noreferrer">
 						<Icon name="mdi:paypal" class="text-2xl"/>
 						PayPal
 					</NuxtLink>

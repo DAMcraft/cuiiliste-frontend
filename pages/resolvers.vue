@@ -1,4 +1,9 @@
 <script setup lang="ts">
+useSeoMeta({
+	title: 'CUII Liste - DNS Resolver',
+	ogTitle: 'CuiiListe.de - DNS Resolver'
+})
+
 import ResolverStatus from "~/components/resolverStatus.vue";
 
 definePageMeta({

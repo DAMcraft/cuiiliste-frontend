@@ -15,7 +15,7 @@ const props = defineProps({
 			Android <span v-if="isRecommended" class="text-accent">(Einfach)</span></div>
 		<div class="collapse-content md:ml-4">
 			<p><count>1.</count> Lade die App "1.1.1.1 + WARP: Safer Internet" aus dem
-				<a href="https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone" class="text-primary" target="_blank" rel="noopener">Play Store</a>
+				<a href="https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone" class="link" target="_blank" rel="noopener">Play Store</a>
 				herunter.
 			</p>
 			<NuxtImg src="/img/bypass/android1.png" alt="1.1.1.1 runterladen" width="300" />
