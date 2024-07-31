@@ -19,16 +19,16 @@ export default defineNuxtConfig({
         }
     },
     routeRules: {
-        '/cuii/domain-liste': {redirect: '/domains'},
-        '/cuii/dns/**': {redirect: '/umgehen'},
-        '/cuii/pi-hole': {redirect: '/umgehen'},
-        '/cuii/AdGuard': {redirect: '/umgehen'},
-        '/cuii/frag-den-staat': {redirect: '/'},
-        '/cuii/impressum': {redirect: '/about'},
-        '/cuii/datenschutz': {redirect: '/about'},
-        '/cuii/kontakt': {redirect: '/about'},
-        '/cuii/domain-add': {redirect: '/probe'},
-        '/cuii/news-rund-um-die-welt': {redirect: '/news'},
+        '/cuii/domain-liste': {redirect: {to: '/domains', statusCode: 301}},
+        '/cuii/dns/**': {redirect: {to: '/umgehen', statusCode: 301}},
+        '/cuii/pi-hole': {redirect: {to: '/umgehen', statusCode: 301}},
+        '/cuii/AdGuard': {redirect: {to: '/umgehen', statusCode: 301}},
+        '/cuii/frag-den-staat': {redirect: {to: '/', statusCode: 301}},
+        '/cuii/impressum': {redirect: {to: '/about', statusCode: 301}},
+        '/cuii/datenschutz': {redirect: {to: '/about', statusCode: 301}},
+        '/cuii/kontakt': {redirect: {to: '/about', statusCode: 301}},
+        '/cuii/domain-add': {redirect: {to: '/probe', statusCode: 301}},
+        '/cuii/news-rund-um-die-welt': {redirect: {to: '/news', statusCode: 301}}
     },
     site: {
         url: 'https://cuiiliste.de',
