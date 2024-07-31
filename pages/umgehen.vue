@@ -28,6 +28,9 @@ if (device.isIos) {
 if (device.isMacOS) {
 	recommendedConfigs.value.push("MacOS")
 }
+if (device.userAgent.includes("Linux") && !device.isMobileOrTablet) {
+	recommendedConfigs.value.push("Linux")
+}
 
 </script>
 
@@ -63,6 +66,9 @@ if (device.isMacOS) {
 					<div v-if="recommendedConfigs.includes('MacOS')">
 						<BypassInstructionMacOS is-recommended/>
 					</div>
+					<div v-if="recommendedConfigs.includes('Linux')">
+						<BypassInstructionLinux is-recommended/>
+					</div>
 					<div v-if="recommendedConfigs.includes('Fritzbox')">
 						<BypassInstructionFritzbox is-recommended/>
 					</div>
@@ -91,7 +97,10 @@ if (device.isMacOS) {
 						<BypassInstructionIos />
 					</div>
 					<div v-if="!recommendedConfigs.includes('MacOS')">
-						<BypassInstructionMacOS is-recommended/>
+						<BypassInstructionMacOS />
+					</div>
+					<div v-if="!recommendedConfigs.includes('Linux')">
+						<BypassInstructionLinux />
 					</div>
 					<div v-if="!recommendedConfigs.includes('Fritzbox')">
 						<BypassInstructionFritzbox />
