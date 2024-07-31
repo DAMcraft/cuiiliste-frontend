@@ -17,13 +17,6 @@
     "vue": "latest"
   },
   "devDependencies": {
-    "@iconify-json/eos-icons": "^1.1.10",
-    "@iconify-json/iconamoon": "^1.1.4",
-    "@iconify-json/mdi": "^1.1.67",
-    "@iconify-json/octicon": "^1.1.56",
-    "@iconify-json/pajamas": "^1.1.48",
-    "@iconify-json/pepicons-pop": "^1.1.11",
-    "@iconify-json/tabler": "^1.1.118",
     "@nuxtjs/device": "^3.1.1",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@vueuse/core": "^10.11.0",
