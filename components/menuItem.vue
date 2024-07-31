@@ -1,6 +1,6 @@
 <template>
-    <NuxtLink class="p-1 ml-2 mr-2" :to="link">
-        <div class="p-2 text-center">
+    <NuxtLink :to="link" class="md:p-0.5 md:mx-0.5 xl:p-1 xl:mx-2" >
+        <div class="xl:p-2 md:p-0.5 text-center">
             <div class="font-bold text-accent" :class="active ? '' : 'invisible h-0'">
                 <span class="flex items-center">
                     <Icon :name="icon" class="mr-1" />

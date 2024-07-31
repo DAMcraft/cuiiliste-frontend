@@ -13,6 +13,7 @@
     "@nuxt/icon": "^1.2.0",
     "@nuxt/image": "^1.7.0",
     "nuxt": "^3.12.4",
+    "qrcode.vue": "^3.4.1",
     "vue": "latest"
   },
   "devDependencies": {

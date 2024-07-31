@@ -4,7 +4,7 @@
 		<div class="drawer-content flex flex-col">
 			<!-- Navbar -->
 			<div class="navbar bg-base-300 w-full z-50 sticky top-0">
-				<div class="flex-none xl:hidden">
+				<div class="flex-none lg:hidden">
 					<label for="my-drawer" aria-label="open sidebar" class="btn btn-square btn-ghost">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@
 					</label>
 				</div>
 				<NuxtLink class="mx-2 flex-1 px-2" href="/"><span class="font-bold text-accent text-2xl">CUII</span><span class="text-2xl">Liste.de</span></NuxtLink>
-				<div class="hidden flex-none xl:block">
+				<div class="hidden flex-none lg:block">
 					<ul class="menu menu-horizontal">
 						<li v-for="page in pages" :key="page.name">
 							<MenuItem :link="page.link" :active="currentPage === page.link" :icon="page.icon">
@@ -30,7 +30,7 @@
 					</ul>
 				</div>
 			</div>
-			<section class="m-4 xl:ml-16 xl:mr-16">
+			<section class="mt-4 m-x-4 xl:mx-16">
 				<slot></slot>
 			</section>
 		</div>
