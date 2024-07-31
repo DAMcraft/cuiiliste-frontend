@@ -11,7 +11,8 @@ const props = defineProps({
 <template>
 	<div class="collapse collapse-plus bg-base-200 mx-auto">
 		<input type="checkbox" class="peer" />
-		<div class="collapse-title text-xl font-medium">Edge <span v-if="isRecommended" class="text-accent">(Einfach)</span></div>
+		<div class="collapse-title text-xl font-medium flex items-center"><Icon name="mingcute:edge-fill" class="mr-2" />
+			Edge <span v-if="isRecommended" class="text-accent">(Einfach)</span></div>
 		<div class="collapse-content md:ml-4">
 			<p><count>1.</count> Öffne Edge</p>
 			<p><count>2.</count> Klicke auf die drei Punkte oben rechts und wähle "Einstellungen".</p>

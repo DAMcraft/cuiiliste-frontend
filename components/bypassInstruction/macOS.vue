@@ -11,7 +11,7 @@ const props = defineProps({
 <template>
 	<div class="collapse collapse-plus bg-base-200 mx-auto">
 		<input type="checkbox" class="peer" />
-		<div class="collapse-title text-xl font-medium">MacOS</div>
+		<div class="collapse-title text-xl font-medium flex items-center"><Icon name="gravity-ui:logo-macos" class="mr-2" />MacOS</div>
 		<div class="collapse-content md:ml-4">
 			<p><count>1.</count> Öffnen Sie die Übersicht Ihrer Programme im Finder und starten Sie die App "Systemeinstellungen".</p>
 			<p><count>2.</count> Wählen Sie nun in der Mitte "Netzwerk" aus.</p>

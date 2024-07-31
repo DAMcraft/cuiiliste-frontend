@@ -11,7 +11,7 @@ const props = defineProps({
 <template>
 	<div class="collapse collapse-plus bg-base-200 mx-auto">
 		<input type="checkbox" class="peer" />
-		<div class="collapse-title text-xl font-medium">Fritzbox <span v-if="isRecommended" class="text-accent">(Gilt für alle im Netzwerk)</span></div>
+		<div class="collapse-title text-xl font-medium flex items-center"><Icon name="material-symbols:router" class="mr-2" />Fritzbox <span v-if="isRecommended" class="text-accent">(Gilt für alle im Netzwerk)</span></div>
 		<div class="collapse-content md:ml-4">
 			<p><count>1.</count> Öffne <a href="http://192.168.178.1" target="_blank" class="text-accent">http://fritz.box</a></p>
 			<p><count>2.</count> Melde dich an</p>

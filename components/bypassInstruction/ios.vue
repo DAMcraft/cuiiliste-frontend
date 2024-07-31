@@ -11,7 +11,7 @@ const props = defineProps({
 <template>
 	<div class="collapse collapse-plus bg-base-200 mx-auto">
 		<input type="checkbox" class="peer" />
-		<div class="collapse-title text-xl font-medium">iOS <span v-if="isRecommended" class="text-accent">(Einfach)</span></div>
+		<div class="collapse-title text-xl font-medium flex items-center"><Icon name="mdi:apple" class="mr-2" />iOS <span v-if="isRecommended" class="text-accent">(Einfach)</span></div>
 		<div class="collapse-content md:ml-4">
 			<p><count>1.</count> Lade die App "1.1.1.1: Faster Internet" aus dem
 				<a href="https://apps.apple.com/de/app/1-1-1-1-faster-internet/id1423538627" class="text-primary" target="_blank" rel="noopener">App Store</a>

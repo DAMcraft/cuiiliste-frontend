@@ -11,7 +11,8 @@ const props = defineProps({
 <template>
 	<div class="collapse collapse-plus bg-base-200 mx-auto">
 		<input type="checkbox" class="peer" />
-		<div class="collapse-title text-xl font-medium">Android <span v-if="isRecommended" class="text-accent">(Einfach)</span></div>
+		<div class="collapse-title text-xl font-medium flex items-center"><Icon name="material-symbols:android" class="mr-2" />
+			Android <span v-if="isRecommended" class="text-accent">(Einfach)</span></div>
 		<div class="collapse-content md:ml-4">
 			<p><count>1.</count> Lade die App "1.1.1.1 + WARP: Safer Internet" aus dem
 				<a href="https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone" class="text-primary" target="_blank" rel="noopener">Play Store</a>

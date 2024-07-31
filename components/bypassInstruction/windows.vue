@@ -11,7 +11,7 @@ const props = defineProps({
 <template>
 	<div class="collapse collapse-plus bg-base-200 mx-auto">
 		<input type="checkbox" class="peer" />
-		<div class="collapse-title text-xl font-medium">Windows</div>
+		<div class="collapse-title text-xl font-medium flex items-center"><Icon name="ri:windows-fill" class="mr-2" />Windows</div>
 		<div class="collapse-content md:ml-4">
 			<p><count>1.</count> Öffne die Windows Einstellungen</p>
 			<p><count>2.</count> Klicke auf "Netzwerk & Internet"</p>
