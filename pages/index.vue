@@ -46,7 +46,7 @@ onMounted(() => {
 			</p>
 		</div>
 		<div class="mx-2 bottom-0 align-bottom">
-			<NuxtImg src="/img/nicht_genannt.png" class="w-full" />
+			<NuxtImg src="/img/nicht_genannt.webp" class="w-full" />
 			<p class="text-[--lessimportant] italic">
 				Zitat aus Anlage 1 §4 Abs. 4 lit. des
 				<a class="text-primary" href="https://cuii.info/fileadmin/files/CUII_Verhaltenskodex_23.pdf" target="_blank">CUII-Verhaltenskodex</a>
@@ -57,11 +57,12 @@ onMounted(() => {
 	</div>
 	<div class="bg-base-300 shadow-lg p-4 flex flex-col">
 		<h2 class="text-2xl font-bold">
-			Hier könnte Ihre Werbung stehen
+			Unser Ziel
 		</h2>
 		<p>
-			Wir wollen die Sperrpraxis der CUII transparent machen und die Meinungsfreiheit im Internet schützen.
-			Wir sind für eine Welt, in der das Internet frei und offen ist - und nicht von privaten Organisationen zensiert wird.
+			Wir wollen die Sperrpraxis der CUII <b>transparent machen</b> und die Meinungsfreiheit im Internet schützen.
+			Wir sind für eine Welt, in der das Internet frei und offen ist - und <b>nicht von privaten Organisationen
+			zensiert</b> wird.
 		</p>
 	</div>
 	<div class="flex flex-col justify-between">

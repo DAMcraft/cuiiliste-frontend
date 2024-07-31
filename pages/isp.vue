@@ -64,12 +64,12 @@ amIAffected().then((res) => {
 			</div>
 			<div class="flex justify-center mt-2">
 				<div class="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid gap-4">
-					<CuiiMember logo-link="https://cuii.info/fileadmin/_processed_/4/2/csm_1und1_neu_square_405bafe5db.png" name="1&1 Versatel"/>
-					<CuiiMember logo-link="https://cuii.info/fileadmin/_processed_/6/7/csm_dtglasfaser_square_137fe109e3.png" name="Deutsche Glasfaser"/>
-					<CuiiMember logo-link="https://cuii.info/fileadmin/_processed_/5/e/csm_freenet_square_92227a7b92.png" name='"Free"net'/>
-					<CuiiMember logo-link="https://cuii.info/fileadmin/_processed_/5/8/csm_telefonica_square_0e76f3001e.png" name="Telefónica (o2)" should-invert-dark/>
-					<CuiiMember logo-link="https://cuii.info/fileadmin/_processed_/f/b/csm_Telekom_square_498b38203f.png" name="Telekom"/>
-					<CuiiMember logo-link="https://cuii.info/fileadmin/_processed_/a/f/csm_vodafone_square_c1925fab9d.png" name="Vodafone"/>
+					<CuiiMember logo-link="/img/anbieter/1&1.png" name="1&1 Versatel"/>
+					<CuiiMember logo-link="/img/anbieter/deutsche_glasfaser.png" name="Deutsche Glasfaser"/>
+					<CuiiMember logo-link="/img/anbieter/freenet.png" name='"Free"net'/>
+					<CuiiMember logo-link="/img/anbieter/telefonica.png" name="Telefónica (o2)" should-invert-dark/>
+					<CuiiMember logo-link="/img/anbieter/telekom.png" name="Telekom"/>
+					<CuiiMember logo-link="/img/anbieter/vodafone.png" name="Vodafone"/>
 				</div>
 			</div>
 			<div class="mt-5 text-lg">
