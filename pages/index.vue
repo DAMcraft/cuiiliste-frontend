@@ -111,7 +111,7 @@ onMounted(() => {
 					<p>
 						Tritt unserem Discord-Server bei und diskutiere mit uns über Zensur und Freiheit im Internet.
 					</p>
-					<a class="bg-primary text-white p-3 m-auto rounded-lg flex items-center gap-2 hover:bg-primary-hover mt-2"
+					<a class="bg-primary text-white py-3 px-5 m-auto rounded-lg flex items-center gap-2 hover:bg-primary-hover mt-2"
 					   :href="useRuntimeConfig().public.discord_invite">
 						<span class="mr-2">Beitreten</span>
 						<Icon name="pajamas:discord" class="text-white text-2xl"/>
@@ -126,7 +126,7 @@ onMounted(() => {
 					<p>
 						Erfahre mehr über uns, unsere Ziele und wie diese Webseite funzt.
 					</p>
-					<NuxtLink class="bg-base-100 p-3 m-auto rounded-lg flex items-center gap-2 hover:bg-primary-hover mt-2"
+					<NuxtLink class="bg-base-100 p-3 px-5 m-auto rounded-lg flex items-center gap-2 hover:bg-primary-hover mt-2"
 					          to="/about">
 						<span class="mr-2">Mehr erfahren</span>
 						<Icon name="mdi:arrow-right" class="text-2xl"/>
@@ -135,7 +135,7 @@ onMounted(() => {
 			</div>
 		</div>
 		<div class="bg-base-300 shadow-lg p-4 flex">
-			<Icon name="mdi:heart" class="text-9xl"/>
+			<Icon name="mdi:heart" class="text-9xl hidden sm:block"/>
 			<div class="flex flex-col ml-4">
 				<h2 class="text-2xl font-bold">
 					Uns unterstützen
