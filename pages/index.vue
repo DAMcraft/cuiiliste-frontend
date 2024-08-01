@@ -56,7 +56,7 @@ onMounted(() => {
 			<div class="mx-2 bottom-0 align-bottom">
 				<NuxtImg src="/img/nicht_genannt.webp" class="w-full"/>
 				<p class="text-[--lessimportant] italic">
-					Zitat aus Anlage 1 §4 Abs. 4 lit. des
+					Zitat aus Anlage 1 §4 Abs. 4 lit. l des
 					<a class="link" href="https://cuii.info/fileadmin/files/CUII_Verhaltenskodex_23.pdf"
 					   target="_blank">CUII-Verhaltenskodex</a>
 					<br class="hidden sm:block"/>
