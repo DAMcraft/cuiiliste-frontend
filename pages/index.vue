@@ -109,7 +109,7 @@ onMounted(() => {
 				<Icon name="mdi:arrow-right" class="text-white text-6xl ml-auto"/>
 			</NuxtLink>
 		</div>
-		<div class="flex flex-row justify-between">
+		<div class="flex flex-row justify-between hidden">
 			<div class="bg-base-300 shadow-lg w-1/2 flex mr-1 sm:mr-2 p-2 sm:p-4">
 				<div class="flex flex-col">
 					<h2 class="text-2xl font-bold">
@@ -141,7 +141,7 @@ onMounted(() => {
 				</div>
 			</div>
 		</div>
-		<div class="bg-base-300 shadow-lg p-4 flex">
+		<div class="bg-base-300 shadow-lg p-4 flex hidden">
 			<Icon name="mdi:heart" class="text-9xl hidden sm:block"/>
 			<div class="flex flex-col ml-4">
 				<h2 class="text-2xl font-bold">
