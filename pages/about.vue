@@ -87,6 +87,17 @@ useSeoMeta({
 				Alle Informationen auf dieser Website basieren auf öffentlich verfügbaren Daten und der persönlichen Recherche.
 				Bei Fragen oder Unsicherheiten hinsichtlich gesperrter Domains oder der CUII wenden Sie sich bitte direkt an die CUII.
 			</p>
+			<p>
+				CUII Liste.de enthält Links zu externen Websites, die nicht von uns betrieben werden.
+				Wir haben keinen Einfluss auf den Inhalt und die Gestaltung dieser externen Websites und übernehmen daher keine Verantwortung für deren Inhalte.
+				Die Verantwortung für den Inhalt der verlinkten Seiten liegt ausschließlich bei deren Betreibern.
+				Das Setzen eines Links auf eine externe Website bedeutet nicht, dass wir deren Inhalte oder die Betreiber der Seite unterstützen.
+				Bei der Verlinkung haben wir die entsprechenden Seiten auf mögliche rechtliche Verstöße überprüft.
+				Sollte jedoch eine verlinkte Seite gegen geltendes Recht verstoßen oder problematische Inhalte aufweisen,
+				bitten wir um eine entsprechende Mitteilung, damit wir den Link gegebenenfalls entfernen können.
+				Die Nutzung der verlinkten Websites erfolgt auf eigene Verantwortung.
+				Für die Inhalte der externen Seiten und die daraus resultierenden Folgen übernehmen wir keinerlei Haftung.
+			</p>
 		</div>
 
 		<div class="my-6 mx-auto flex justify-center">
