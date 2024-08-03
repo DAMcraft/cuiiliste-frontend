@@ -30,7 +30,7 @@
 					</ul>
 				</div>
 			</div>
-			<section class="mt-4 m-x-4 xl:mx-16">
+			<section class="mt-4 mx-4 xl:mx-16">
 				<slot></slot>
 			</section>
 		</div>
