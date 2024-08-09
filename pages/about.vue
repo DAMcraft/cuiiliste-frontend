@@ -42,6 +42,8 @@ useSeoMeta({
 				<li><NuxtLink href="https://veronoi.cc/" class="link font-bold" target="_blank">Veronoicc</NuxtLink> für die Suche nach offenen DNS-Resolvern</li>
 				<li><NuxtLink href="https://discord.gg/eJMnvktRMA" class="link" target="_blank">SSI</NuxtLink>,
 					einem echt coolen technischen Discord-Server mit vielen coolen Nerds -> <NuxtLink href="https://ssi.fyi" class="link" target="_blank">ssi.fyi</NuxtLink></li>
+				<li><NuxtLink href="https://web.archive.org/web/20220419210040/https://cuiiliste.de/" class="link font-bold" target="_blank">Originale CUIIListe</NuxtLink>
+					welche uns die ursprüngliche Idee gegeben hat</li>
 			</ul>
 		</div>
 
