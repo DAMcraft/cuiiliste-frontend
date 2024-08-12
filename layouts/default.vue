@@ -23,7 +23,7 @@
 				<div class="hidden flex-none lg:block">
 					<ul class="menu menu-horizontal">
 						<li v-for="page in pages" :key="page.name">
-							<MenuItem :link="page.link" :active="currentPage === page.link" :icon="page.icon">
+							<MenuItem :link="page.link" :active="currentPage === page.link" :icon="page.icon" :class="page.hide_if_small ? 'hidden xl:block' : ''">
 								{{ page.name }}
 							</MenuItem>
 						</li>
@@ -51,7 +51,7 @@
 <script setup>
 
 let pages = [
-	{name: 'Home', link: '/', icon: 'iconamoon:home-fill'},
+	{name: 'Home', link: '/', icon: 'iconamoon:home-fill', hide_if_small: true},
 	{name: 'Gesperrte Domains', link: '/domains', icon: 'iconamoon:search'},
 	{name: 'Domain hinzufügen', link: '/probe', icon: 'tabler:plus'},
 	{name: 'Bin ich betroffen?', link: '/isp', icon: 'pepicons-pop:question'},
