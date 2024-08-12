@@ -109,14 +109,14 @@ onMounted(() => {
 				<Icon name="mdi:arrow-right" class="text-white text-6xl ml-auto"/>
 			</NuxtLink>
 		</div>
-		<div class="flex flex-row justify-between hidden">
+		<div class="flex flex-row justify-between">
 			<div class="bg-base-300 shadow-lg w-1/2 flex mr-1 sm:mr-2 p-2 sm:p-4">
 				<div class="flex flex-col">
 					<h2 class="text-2xl font-bold">
 						Discord
 					</h2>
 					<p>
-						Tritt unserem Discord-Server bei und diskutiere mit uns über Zensur und Freiheit im Internet.
+						Tritt unserem Discord-Server bei um Benachrichtigungen zu erhalten oder Informationen auszutauschen.
 					</p>
 					<a class="bg-primary text-white py-3 px-5 m-auto rounded-lg flex items-center gap-2 hover:bg-primary-hover mt-2"
 					   :href="useRuntimeConfig().public.discord_invite">
