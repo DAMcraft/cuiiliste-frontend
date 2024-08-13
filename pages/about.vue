@@ -90,7 +90,7 @@ useSeoMeta({
 				Bei Fragen oder Unsicherheiten hinsichtlich gesperrter Domains oder der CUII wenden Sie sich bitte direkt an die CUII.
 			</p>
 			<p>
-				CUII Liste.de enthält Links zu externen Websites, die nicht von uns betrieben werden.
+				CUIIListe.de enthält Links zu externen Websites, die nicht von uns betrieben werden.
 				Wir haben keinen Einfluss auf den Inhalt und die Gestaltung dieser externen Websites und übernehmen daher keine Verantwortung für deren Inhalte.
 				Die Verantwortung für den Inhalt der verlinkten Seiten liegt ausschließlich bei deren Betreibern.
 				Das Setzen eines Links auf eine externe Website bedeutet nicht, dass wir deren Inhalte oder die Betreiber der Seite unterstützen.
