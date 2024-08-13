@@ -56,7 +56,7 @@ let pages = [
 	{name: 'Domain hinzufügen', link: '/probe', icon: 'tabler:plus'},
 	{name: 'Bin ich betroffen?', link: '/isp', icon: 'pepicons-pop:question'},
 	{name: 'Zensur umgehen', link: '/umgehen', icon: 'mdi:shield-check'},
-	{name: 'DNS Resolver status', link: '/resolvers', icon: 'pajamas:status-health'},
+	{name: 'Resolver-Status', link: '/resolvers', icon: 'pajamas:status-health'},
 	{name: 'Über uns', link: '/about', icon: 'mdi:information-outline'},
 ]
 
