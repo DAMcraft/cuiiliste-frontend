@@ -38,6 +38,12 @@ const testDomain = async () => {
 	nonBlockingResolvers = responses.filter((resolver: any) => !resolver.obeys_cuii).sort((a: any, b: any) => a.resolver.localeCompare(b.resolver))
 	finalResultText = finalDomainResult
 }
+
+onMounted(() => {
+  if (useRoute().query.domain) {
+    testDomain()
+  }
+})
 </script>
 
 <template>
@@ -45,7 +51,7 @@ const testDomain = async () => {
 		<h1 class="text-4xl font-bold">Domain hinzufügen</h1>
 		<p class="text-lg sm:w-3/4 sm:text-center mt-2">Teste, welche Internetanbieter eine Domain blockieren (und füge diese unserer Liste hinzu falls diese neu ist)</p>
 		<div class="flex flex-row items-center mt-5">
-			<input type="text" placeholder="kinox.to" class="input input-bordered w-full max-w-xs m-5 placeholder-[--lessimportant]" id="testDomainInput" @keyup.enter="testDomain" :disabled="isSearching">
+			<input type="text" placeholder="kinox.to" class="input input-bordered w-full max-w-xs m-5 placeholder-[--lessimportant]" id="testDomainInput" @keyup.enter="testDomain" :disabled="isSearching" :value="useRoute().query.domain">
 			<button class="btn btn-accent" id="testDomainButton" @click="testDomain" :disabled="isSearching">Testen</button>
 		</div>
 		<div v-if="!hasInput" class="text-error">Bitte gib eine Domain ein.</div>
