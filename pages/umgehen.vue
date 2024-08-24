@@ -4,6 +4,11 @@ useSeoMeta({
 	ogTitle: 'CuiiListe.de - Sperre einfach umgehen'
 })
 
+let referer = useRequestHeaders(["Referer"]).referer
+if (referer && (new URL(referer)).hostname.startsWith("filmpalast")) {
+	navigateTo("/filmpalast")
+}
+
 let recommendedConfigs = ref<string[]>([])
 
 const device = useDevice()
