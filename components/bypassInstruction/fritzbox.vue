@@ -21,7 +21,7 @@ const props = defineProps({
 			<p><count>4.</count> Wähle "DNS-Server" aus</p>
 			<NuxtImg src="/img/bypass/fritzbox3.png" alt="Fritzbox DNS-Server" width="600" />
 			<p>
-				<count>5.</count> Stelle bei DNSv4 auf "Andere DNSv4-Server verwenden" um und trage "9.9.9.9" und "1.1.1.1" ein.
+				<count>5.</count> Stelle bei DNSv4 auf "Andere DNSv4-Server verwenden" um und trage "9.9.9.10" und "1.1.1.1" ein.
 				Bei DNSv6 auf "Andere DNSv6-Server verwenden" und trage "2620:fe::fe" und "2606:4700:4700::1111" ein
 			</p>
 			<NuxtImg src="/img/bypass/fritzbox4.png" alt="Fritzbox DNS-Server" width="600" />

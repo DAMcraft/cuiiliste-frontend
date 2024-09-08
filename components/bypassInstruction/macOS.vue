@@ -18,7 +18,7 @@ const props = defineProps({
 			<p><count>3.</count> Klicken Sie am linken Rand auf die Netzwerkverbindung, die Sie verwenden, zum Beispiel Ihre
 				WLAN-Verbindung. Aktive Verbindungen erkennen Sie an dem grünen Punkt.</p>
 			<p><count>4.</count> Öffnen Sie jetzt rechts unten die "weiteren Optionen". Hier können Sie Änderungen an Ihrer aktuellen Netzwerkverbindung vornehmen.</p>
-			<p><count>5.</count> Oben finden Sie den Reiter "DNS" (s. Bild). Hier können Sie eigene DNS-Server hinzufügen oder wieder löschen. Füge die DNS-Server "9.9.9.9" und "1.1.1.1" hinzu.</p>
+			<p><count>5.</count> Oben finden Sie den Reiter "DNS" (s. Bild). Hier können Sie eigene DNS-Server hinzufügen oder wieder löschen. Füge die DNS-Server "9.9.9.10" und "1.1.1.1" hinzu.</p>
 		</div>
 	</div>
 </template>

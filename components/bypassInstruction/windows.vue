@@ -22,7 +22,7 @@ const props = defineProps({
 			<NuxtImg src="/img/bypass/windows3.png" alt="Windows WLAN Netzwerk" width="300" />
 			<p><count>5.</count> Wähle "Bearbeiten" bei "DNS-Serverzuweisung" aus</p>
 			<NuxtImg src="/img/bypass/windows4.png" alt="Windows DNS-Serverzuweisung" width="300" />
-			<p><count>6.</count> Wähle "Manuell" aus, schalte IPv4 ein, und trage "9.9.9.9" und "1.1.1.1" ein</p>
+			<p><count>6.</count> Wähle "Manuell" aus, schalte IPv4 ein, und trage "9.9.9.10" und "1.1.1.1" ein</p>
 			<NuxtImg src="/img/bypass/windows5.png" alt="Windows DNS-Serverzuweisung" width="300" />
 			<p><count>7.</count> Speichere die Einstellungen</p>
 		</div>
