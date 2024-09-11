@@ -18,7 +18,7 @@ onMounted(() => {
 </script>
 
 <template>
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 		<div class="bg-base-300 shadow-lg p-4">
 			<div class="bg-cuii-banner-background bg-cover bg-center h-64 mb-1">
 				<div class="flex flex-col items-center justify-center h-full text-center p-2">
@@ -123,6 +123,9 @@ onMounted(() => {
 						<span class="mr-2">Beitreten</span>
 						<Icon name="pajamas:discord" class="text-white text-2xl"/>
 					</a>
+					<p class="text-xs mx-auto text-[--lessimportant] italic">
+						Matrix bridge coming soon™
+					</p>
 				</div>
 			</div>
 			<div class="bg-base-300 shadow-lg w-1/2 flex ml-1 sm:ml-2 p-2 sm:p-4">
