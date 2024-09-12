@@ -144,7 +144,7 @@ onMounted(() => {
 				</div>
 			</div>
 		</div>
-		<div class="bg-base-300 shadow-lg p-4 flex hidden">
+		<div class="bg-base-300 shadow-lg p-4 flex">
 			<Icon name="mdi:heart" class="text-9xl hidden sm:block"/>
 			<div class="flex flex-col ml-4">
 				<h2 class="text-2xl font-bold">
