@@ -36,11 +36,21 @@ const testDomain = async () => {
 	let responses = data.responses
 	blockingResolvers = responses.filter((resolver: any) => resolver.obeys_cuii).sort((a: any, b: any) => a.resolver.localeCompare(b.resolver))
 	nonBlockingResolvers = responses.filter((resolver: any) => !resolver.obeys_cuii).sort((a: any, b: any) => a.resolver.localeCompare(b.resolver))
+	let isNXDOMAIN = nonBlockingResolvers.some((resolver: any) => resolver.response === 'NXDOMAIN')
+	if (finalDomainResult === 'BLOCKED' && !isNXDOMAIN) {
+		for (let resolver of blockingResolvers) {
+			if (resolver.response === 'NXDOMAIN') {
+				resolver.response = 'BLOCKED'
+			}
+		}
+
+	}
 	finalResultText = finalDomainResult
 }
 
 onMounted(() => {
   if (useRoute().query.domain) {
+    (document.getElementById('testDomainInput') as HTMLInputElement).value = useRoute().query.domain as string
     testDomain()
   }
 })
@@ -51,7 +61,7 @@ onMounted(() => {
 		<h1 class="text-4xl font-bold">Domain hinzufügen</h1>
 		<p class="text-lg sm:w-3/4 sm:text-center mt-2">Teste, welche Internetanbieter eine Domain blockieren (und füge diese unserer Liste hinzu falls diese neu ist)</p>
 		<div class="flex flex-row items-center mt-5">
-			<input type="text" placeholder="kinox.to" class="input input-bordered w-full max-w-xs m-5 placeholder-[--lessimportant]" id="testDomainInput" @keyup.enter="testDomain" :disabled="isSearching" :value="useRoute().query.domain">
+			<input type="text" placeholder="kinox.to" class="input input-bordered w-full max-w-xs m-5 placeholder-[--lessimportant]" id="testDomainInput" @keyup.enter="testDomain" :disabled="isSearching">
 			<button class="btn btn-accent" id="testDomainButton" @click="testDomain" :disabled="isSearching">Testen</button>
 		</div>
 		<div v-if="!hasInput" class="text-error">Bitte gib eine Domain ein.</div>
