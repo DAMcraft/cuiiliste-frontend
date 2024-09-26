@@ -96,6 +96,9 @@ onMounted(() => {
 			</div>
 		</div>
 	</div>
+	<div class="fixed bottom-0 right-0 p-4">
+		<NuxtLink to="/resolvers" class="underline text-primary"><Icon name="pajamas:status-health" class="mr-2 text-xs" />Resolver-Status</NuxtLink>
+	</div>
 </template>
 
 <style scoped>
